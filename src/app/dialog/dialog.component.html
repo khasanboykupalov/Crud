@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Add Product</h1> <hr>
+<h1 mat-dialog-title>{{title}}</h1> <hr>
 
 <div mat-dialog-content>
     <form [formGroup]="productForm">
@@ -47,6 +47,6 @@
 
 <div mat-dialog-actions [align]="'end'">
   <button mat-raised-button color="warn" mar-dialog-close> Close </button>
-  <button mat-raised-button colot="primary" (click)="addProduct()">Save</button>
+  <button mat-raised-button colot="primary" (click)="addProduct()">{{actionBtn}}</button>
 
 </div>
