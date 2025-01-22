@@ -1,0 +1,40 @@
+{
+  "productList": [
+    {
+      "id": "d556",
+      "productName": "iPhone",
+      "category": "iPhone",
+      "condition": "Second Hand",
+      "price": "200",
+      "comment": "new phone",
+      "date": "2000-12-31T19:00:00.000Z"
+    },
+    {
+      "id": "a056",
+      "productName": "S22",
+      "category": "Samsung",
+      "condition": "New",
+      "price": "1000",
+      "comment": "its great",
+      "date": "2023-12-31T19:00:00.000Z"
+    },
+    {
+      "id": "ed51",
+      "productName": "Mi9T",
+      "category": "Xiaomi",
+      "condition": "Second Hand",
+      "price": "320",
+      "comment": "awesome",
+      "date": "2001-08-31T19:00:00.000Z"
+    },
+    {
+      "id": "a4c7",
+      "productName": "A34",
+      "category": "Samsung",
+      "condition": "B/U",
+      "price": "200",
+      "comment": "not good\n",
+      "date": "2022-02-08T19:00:00.000Z"
+    }
+  ]
+}
