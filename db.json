@@ -1,7 +1,7 @@
 {
   "productList": [
     {
-      "productName": "iPhone8",
+      "productName": "iPhone",
       "category": "iPhone",
       "condition": "Second Hand",
       "price": "200",
@@ -19,13 +19,13 @@
       "date": "2023-12-31T19:00:00.000Z"
     },
     {
-      "id": "3",
-      "productName": "Mi9T",
+      "productName": "Mi9TPro",
       "category": "Xiaomi",
       "condition": "Second Hand",
       "price": "320",
       "comment": "awesome",
-      "date": "2001-08-31T19:00:00.000Z"
+      "date": "2001-08-31T19:00:00.000Z",
+      "id": "3"
     },
     {
       "productName": "Mi8",

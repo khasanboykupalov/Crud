@@ -51,7 +51,7 @@ export class AppComponent implements OnInit{
   @ViewChild(MatSort) sort!: MatSort;
 
   ngOnInit(): void {
-    this.getAllProduct()
+    this.getAllProducts()
   }
 
   title = 'CRUD';
@@ -59,11 +59,15 @@ export class AppComponent implements OnInit{
   openDialog() {
    this.dialog.open(DialogComponent, {
     width:"30%"
-   });
+   }).afterClosed().subscribe(val =>{
+    if(val === "save") {
+      this.getAllProducts()
+    }
+   })
   
   }
 
-  getAllProduct() {
+  getAllProducts() {
     this.api.getProduct().subscribe({
       next:(res) => {
         this.dataSource = new MatTableDataSource(res)
@@ -89,7 +93,11 @@ export class AppComponent implements OnInit{
     this.dialog.open(DialogComponent, {
       width:"30%",
       data:row
-    });
+    }).afterClosed().subscribe(val => {
+      if( val === "update") {
+        this.getAllProducts ();
+      }
+    })
   }
   
 }
