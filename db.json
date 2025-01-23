@@ -19,22 +19,13 @@
       "date": "2023-12-31T19:00:00.000Z"
     },
     {
-      "productName": "Mi9TPro",
-      "category": "Xiaomi",
-      "condition": "Second Hand",
-      "price": "320",
-      "comment": "awesome",
-      "date": "2001-08-31T19:00:00.000Z",
-      "id": "3"
-    },
-    {
-      "productName": "Mi8",
+      "id": "4362",
+      "productName": "A3",
       "category": "Samsung",
       "condition": "New",
-      "price": "321",
-      "comment": "its great phone",
-      "date": "2025-01-17T19:00:00.000Z",
-      "id": "4126"
+      "price": "300",
+      "comment": "Awesome",
+      "date": "2016-02-16T19:00:00.000Z"
     }
   ]
 }
