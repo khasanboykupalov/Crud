@@ -77,7 +77,7 @@ export class DialogComponent {
     if (!this.editData) {
       // Yangi mahsulot qo'shish
       if (this.productForm.valid) {
-        this.api.putProduct(this.productForm.value, Number(this.editData.id)  ).subscribe({
+        this.api.postProduct(this.productForm.value) .subscribe({
           next: () => {
             alert("Product was added successfully");
             this.productForm.reset(); // Formani tozalash
@@ -91,14 +91,15 @@ export class DialogComponent {
     } else {
       // Mahsulotni yangilash
       this.updateProduct();
-    }
+    } 
   }
   
   updateProduct() {
     // Mahsulotni yangilash
-    this.api.putProduct(this.productForm.value, this.editData.id).subscribe({
+    this.api.putProduct(this.productForm.value, Number(this.editData.id)).subscribe({
       next: (res) => {
         alert("Product updated successfully");
+        this.productForm.reset();
         this.dialogRef.close("update"); // Yangilashdan keyin dialogni yopish
       },
       error: () => {

@@ -16,11 +16,11 @@ export class ApiService {
   }
 
   putProduct(data: any, id: number) {
-    return this.http.put<any>("http://localhost:3000/productList"+id, data)
+    return this.http.put<any>("http://localhost:3000/productList/"+id, data) // buyerda produc list dan keyin / bolishi kk chunki link boqshqa boladi va id topilmadydi
   }
 
   deleteProduct(id: number) {
-    return this.http.delete<any>("http://localhost:3000/productList"+id)
+    return this.http.delete<any>("http://localhost:3000/productList/"+id)
   }
 
 }
